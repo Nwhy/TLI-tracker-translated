@@ -38,7 +38,7 @@ package() {
 
   # Install icon
   install -Dm644 build-resources/icon.png \
-    "$pkgdir/usr/share/icons/hicolor/512x512/apps/yihuo-etor.png"
+    "$pkgdir/usr/share/icons/hicolor/1024x1024/apps/yihuo-etor.png"
 
   # Install desktop file
   install -Dm644 yihuo-etor.desktop \

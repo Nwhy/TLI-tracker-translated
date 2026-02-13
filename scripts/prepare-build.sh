@@ -17,7 +17,7 @@ for cmd in node npm npx; do
 done
 
 # Ensure @electron/asar is available locally
-if ! npx asar --version &>/dev/null 2>&1; then
+if ! npx asar --version &>/dev/null; then
   echo "Installing @electron/asar as a local dev dependency..."
   npm install --save-dev @electron/asar
 fi
