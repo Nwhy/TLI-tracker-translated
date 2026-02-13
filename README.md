@@ -74,6 +74,15 @@ This project can be built for Linux as an AppImage or installed natively on Arch
 ### Building an AppImage
 
 ```bash
+# One-step build (extracts asar, installs deps, builds):
+./scripts/prepare-build.sh
+```
+
+Or manually:
+```bash
+npm install -g @electron/asar
+asar extract resources/app.asar extracted-app
+cp -r extracted-app/build/obf-app build/obf-app
 npm install
 npm run dist:linux
 ```

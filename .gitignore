@@ -20,7 +20,8 @@ temp-check/
 易火-ETor.exe
 *.exe
 
-# Build output
+# Build output (created by prepare-build.sh)
+build/obf-app/
 node_modules/
 dist/
 out/
