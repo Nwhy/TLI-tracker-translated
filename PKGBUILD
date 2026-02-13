@@ -6,12 +6,13 @@ pkgdesc="YiHuo ETor - English Translation (Torchlight Infinite Tracker)"
 arch=('x86_64')
 url="https://github.com/Nwhy/TLI-tracker-translated"
 license=('MIT')
-depends=('electron32')
+# Override _electron before building to use a specific version, e.g.:
+#   _electron=electron34 makepkg -si
+_electron=${_electron:-electron}
+depends=("$_electron")
 makedepends=('npm' 'nodejs' 'asar')
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/Nwhy/TLI-tracker-translated/archive/refs/heads/main.tar.gz")
 sha256sums=('SKIP')
-
-_electron=electron32
 
 prepare() {
   cd "$srcdir/TLI-tracker-translated-main"
@@ -48,9 +49,9 @@ package() {
   install -dm755 "$pkgdir/usr/bin"
   # --no-sandbox is required because Electron apps installed system-wide
   # cannot use the SUID sandbox unless chrome-sandbox is properly configured.
-  cat > "$pkgdir/usr/bin/yihuo-etor" << 'EOF'
+  cat > "$pkgdir/usr/bin/yihuo-etor" << EOF
 #!/bin/bash
-exec electron32 /usr/lib/yihuo-etor-translated/ --no-sandbox "$@"
+exec ${_electron} /usr/lib/yihuo-etor-translated/ --no-sandbox "\$@"
 EOF
   chmod 755 "$pkgdir/usr/bin/yihuo-etor"
 
