@@ -4,9 +4,10 @@
 
 **This is NOT my original work.**
 
-I have merely translated the user interface from Chinese to English to make this excellent Torchlight: Infinite tracking tool accessible to the international community.
+I have rebuilt this tool for the CachyOS / Linux community.
 
 All credit for the development, design, and functionality of this application belongs to the original creators of **易火-ETor (YiHuo ETor)**.
+All credit for the english translation goes to GIBOo_
 
 ---
 
@@ -21,44 +22,18 @@ YiHuo ETor is a comprehensive tracking and analysis tool for **Torchlight: Infin
 
 ---
 
-## 📥 Installation
-
-1. Go to the [Releases](https://github.com/Giboork/TLI-tracker-translated/releases) page
-2. Download the latest `TLI-tracker-translated.zip` file
-3. Extract the ZIP file to a folder of your choice
-4. Run `易火-ETor.exe` to start the application
-
-That's it! The app will run in English.
-
----
-
-## 🔧 What I Did
-
-This English version includes:
-- ✅ Fully translated user interface
-- ✅ Translated system dialogs and notifications
-- ✅ Pattern-based translation for dynamic content
-- ✅ Localized category labels and item names
-- ✅ Auto-updating translation system via AppData
-
-**Translation by:** GIBOo_
-
----
-
 ## ⚠️ Important Notes
 
-- This is an **unofficial translation** - not endorsed by the original developers
-- If the translated version doesn't work correctly, please revert to the original Chinese version
+- This is an **unofficial rebuild** - not endorsed by the original developers
+- If the rebuilt version doesn't work correctly, please revert to the original Chinese Windows version
 - All feedback regarding core functionality should be directed to the original creators
-- Translation issues can be reported, but I cannot fix bugs in the base application
+
 
 ---
 
 ## 🙏 Credits
 
 All credit goes to the original YiHuo ETor development team for creating this powerful tool.
-
-*This translation exists solely to help the global Torchlight: Infinite community.*
 
 ---
 
@@ -69,7 +44,7 @@ This project can be built for Linux as an AppImage or installed natively on Arch
 ### Prerequisites
 
 - Node.js 18+ and npm
-- For Arch/CachyOS: `base-devel`, `electron32`, `asar`, `npm`, `nodejs`
+- For Arch/CachyOS: `base-devel`, `electron`, `asar`, `npm`, `nodejs`
 
 ### Building an AppImage
 
@@ -112,4 +87,4 @@ This uses the system `electron32` package and installs a launcher at `/usr/bin/y
 
 The original application's license applies. This translation is provided as-is with no warranties.
 
-If you're the original developer and want this translation removed or modified, please contact me.
+If you're the original developer and want this rebuild removed or modified, please contact me.
