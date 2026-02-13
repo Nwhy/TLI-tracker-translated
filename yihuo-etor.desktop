@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=YiHuo ETor
+Comment=Torchlight Infinite Tracker (English Translation)
+Exec=yihuo-etor %U
+Icon=yihuo-etor
+Terminal=false
+Type=Application
+Categories=Game;Utility;

@@ -62,6 +62,43 @@ All credit goes to the original YiHuo ETor development team for creating this po
 
 ---
 
+## 🐧 Linux / CachyOS Build
+
+This project can be built for Linux as an AppImage or installed natively on Arch Linux / CachyOS.
+
+### Prerequisites
+
+- Node.js 18+ and npm
+- For Arch/CachyOS: `base-devel`, `electron32`, `asar`, `npm`, `nodejs`
+
+### Building an AppImage
+
+```bash
+npm install
+npm run dist:linux
+```
+
+The output will be in the `dist/` directory.
+
+### Installing on CachyOS / Arch Linux
+
+```bash
+makepkg -si
+```
+
+This uses the system `electron32` package and installs a launcher at `/usr/bin/yihuo-etor`.
+
+### Notes
+
+- The app connects to a remote web UI and monitors local **Torchlight: Infinite** game logs to provide real-time tracking data.
+- **Steam Proton users:** Game logs will be located under the Steam Proton compatibility path, typically:
+  ```
+  ~/.local/share/Steam/steamapps/compatdata/<APP_ID>/pfx/drive_c/...
+  ```
+  You may need to configure the app to point to this directory.
+
+---
+
 ## 📄 License
 
 The original application's license applies. This translation is provided as-is with no warranties.

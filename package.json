@@ -1,0 +1,49 @@
+{
+  "name": "etor-translated",
+  "version": "1.0.5",
+  "description": "YiHuo ETor - English Translation (Torchlight Infinite Tracker)",
+  "main": "build/obf-app/main.js",
+  "scripts": {
+    "start": "electron .",
+    "pack:linux": "electron-builder --linux --dir",
+    "dist:linux": "electron-builder --linux",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.7.0",
+    "sudo-prompt": "^9.2.1",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "electron": "^32.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "productName": "YiHuo-ETor",
+    "appId": "com.efarm.tor",
+    "asar": true,
+    "directories": {
+      "output": "dist",
+      "buildResources": "build-resources"
+    },
+    "files": [
+      "build/obf-app/**",
+      "package.json",
+      "node_modules/**",
+      "!node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!node_modules/.cache/**"
+    ],
+    "extraMetadata": {
+      "main": "build/obf-app/main.js"
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "pacman"
+      ],
+      "category": "Game;Utility;",
+      "icon": "build-resources/icon.png"
+    }
+  }
+}

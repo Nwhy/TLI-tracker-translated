@@ -6,10 +6,7 @@ temp-check/
 # Development Scripts
 *.js
 !locales/**/*.js
-
-# Development Files
-package.json
-nul
+!scripts/*.sh
 
 # Git metadata
 .git/
@@ -22,3 +19,16 @@ nul
 # Large files (distribute via GitHub Releases instead)
 易火-ETor.exe
 *.exe
+
+# Build output
+node_modules/
+dist/
+out/
+*.AppImage
+*.deb
+*.rpm
+*.snap
+*.pacman
+
+# OS files
+nul
