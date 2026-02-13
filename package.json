@@ -2,6 +2,11 @@
   "name": "etor-translated",
   "version": "1.0.5",
   "description": "YiHuo ETor - English Translation (Torchlight Infinite Tracker)",
+  "author": {
+    "name": "Nwhy",
+    "email": "nwhy@users.noreply.github.com"
+  },
+  "homepage": "https://github.com/Nwhy/TLI-tracker-translated",
   "main": "build/obf-app/main.js",
   "scripts": {
     "start": "electron .",
