@@ -1,4 +1,4 @@
-# YiHuo ETor - English Translation
+# YiHuo ETor - English Translation - CachyOS / Linux
 
 ## 🌍 Translation Disclaimer
 
